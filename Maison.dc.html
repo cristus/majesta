@@ -23,6 +23,18 @@
   .maj-frame:hover img{transform:scale(1.045)}
   .maj-stone{transition:transform .6s cubic-bezier(.2,.7,.2,1),box-shadow .6s}
   .maj-stone:hover{transform:translateY(-6px);box-shadow:0 30px 60px rgba(43,39,34,.16)}
+  @media (max-width:760px){
+    .maj-nav{gap:0 !important}
+    .maj-nav a{font-size:9px !important;letter-spacing:.05em !important;padding:6px 7px !important}
+    .maj-navlink{display:none !important}
+    .maj-hall{grid-template-columns:1fr 1fr !important;gap:28px 16px !important}
+    .maj-hall > div{border-left:0 !important}
+    .maj-g2{grid-template-columns:1fr !important;gap:34px !important}
+    .maj-g3{grid-template-columns:1fr !important;gap:24px !important}
+    .maj-cd{gap:10px !important}
+    .maj-cd > span{display:none !important}
+    .maj-foot{grid-template-columns:1fr 1fr !important;gap:30px !important}
+  }
 </style>
 </helmet>
 
@@ -31,12 +43,12 @@
   <div style="background:#2b2722;color:#e6cf9b;text-align:center;padding:9px 16px;font-size:10px;letter-spacing:.28em;text-transform:uppercase">Private previews by appointment &nbsp;·&nbsp; The Maison opens Autumn 2026</div>
 
   <div style="position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:24px;height:50px;padding:0 24px;background:rgba(247,243,234,.88);backdrop-filter:blur(10px);border-bottom:1px solid #e3dac6">
-    <a href="index.dc.html" style="text-decoration:none;display:flex;align-items:center"><img src="majesta-logo.png" alt="MAJESTA" style="height:15px;width:auto;display:block"/></a>
-    <div style="display:flex;align-items:center;gap:2px">
+    <a href="index.dc.html" style="text-decoration:none;display:flex;align-items:center"><img src="majesta-logo.png" alt="MAJESTA" style="height:19px;width:auto;display:block"/></a>
+    <div class="maj-nav" style="display:flex;align-items:center;gap:2px">
       <a href="index.dc.html" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#9c8b66;padding:7px 12px">Overview</a>
-      <a href="Essential.dc.html" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#9c8b66;padding:7px 12px">Essential</a>
-      <a href="Signature.dc.html" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#9c8b66;padding:7px 12px">Signature</a>
-      <a href="Maison.dc.html" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b2722;padding:7px 12px;border-bottom:1px solid #c2a875">Maison</a>
+      <a href="Essential.dc.html" class="maj-navlink" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#9c8b66;padding:7px 12px">Essential</a>
+      <a href="Signature.dc.html" class="maj-navlink" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#9c8b66;padding:7px 12px">Signature</a>
+      <a href="Maison.dc.html" class="maj-navlink" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b2722;padding:7px 12px;border-bottom:1px solid #c2a875">Maison</a>
       <a href="#appointment" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b2722;padding:8px 16px;margin-left:8px;border:1px solid #c2a875">Private Preview</a>
     </div>
   </div>
@@ -49,7 +61,7 @@
     </div>
     <div style="display:flex;align-items:center;gap:18px;margin-top:18px">
       <span style="color:#c2a875;font-size:13px">&#9670;</span>
-      <img src="majesta-logo.png" alt="MAJESTA" style="height:clamp(26px,4.4vw,52px);width:auto;display:block"/>
+      <img src="majesta-logo.png" alt="MAJESTA" style="height:clamp(34px,5.6vw,66px);width:auto;display:block"/>
       <span style="color:#c2a875;font-size:13px">&#9670;</span>
     </div>
   </div>
@@ -71,7 +83,7 @@
 
   <!-- HALLMARKS -->
   <div style="max-width:1240px;margin:0 auto;padding:clamp(56px,8vw,104px) 32px">
-    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,52px)">
+    <div class="maj-hall" style="display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,52px)">
       <div style="text-align:center">
         <div style="color:#c2a875;font-size:14px">&#9670;</div>
         <div style="font-family:'Marcellus',serif;font-size:clamp(16px,1.4vw,20px);margin-top:16px">Atelier Hand-Setting</div>
@@ -98,7 +110,7 @@
   <div style="height:46px;background-image:repeating-linear-gradient(45deg,#c8ac7d 0 1px,transparent 1px 15px),repeating-linear-gradient(-45deg,#c8ac7d 0 1px,transparent 1px 15px);opacity:.5"></div>
 
   <!-- STORY -->
-  <div style="max-width:1240px;margin:0 auto;padding:clamp(64px,9vw,128px) 32px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,84px);align-items:center">
+  <div class="maj-g2" style="max-width:1240px;margin:0 auto;padding:clamp(64px,9vw,128px) 32px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,84px);align-items:center">
     <figure class="maj-frame" style="margin:0;position:relative;padding:14px;overflow:hidden">
       <div style="position:absolute;inset:0;border:1px solid #c2a875;z-index:2;pointer-events:none"></div>
       <img src="img/yellow-neck.jpg" alt="Yellow diamond ring worn" style="display:block;width:100%;height:min(72vh,680px);object-fit:cover;object-position:center"/>
@@ -120,7 +132,7 @@
 
   <!-- SAVOIR-FAIRE -->
   <div style="background:#efe7d6;background-image:linear-gradient(180deg,rgba(255,255,255,.4),rgba(255,255,255,0))">
-    <div style="max-width:1240px;margin:0 auto;padding:clamp(64px,9vw,128px) 32px;display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(40px,5vw,88px);align-items:center">
+    <div class="maj-g2" style="max-width:1240px;margin:0 auto;padding:clamp(64px,9vw,128px) 32px;display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(40px,5vw,88px);align-items:center">
       <div>
         <div style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#b89a6a;margin-bottom:18px">Savoir-Faire</div>
         <h3 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(30px,4vw,54px);line-height:1.1;margin:0 0 40px">Four hands, one creation</h3>
@@ -163,7 +175,7 @@
       <div style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#b89a6a">The Stones</div>
       <h3 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(30px,4vw,54px);margin:12px 0 0">A Trilogy of Colour</h3>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(22px,2.6vw,40px)">
+    <div class="maj-g3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(22px,2.6vw,40px)">
       <div class="maj-stone" style="background:#fff;border:1px solid #ece3d0">
         <div style="height:4px;background:#1f5c4a"></div>
         <img src="img/green-bracelet.jpg" alt="Emerald" style="display:block;width:100%;height:min(52vh,500px);object-fit:cover;object-position:center"/>
@@ -214,7 +226,7 @@
       <div style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#b89a6a">The Lookbook</div>
       <h3 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(30px,4vw,54px);margin:12px 0 0">First Impressions</h3>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,2.6vw,44px);align-items:start">
+    <div class="maj-g2" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,2.6vw,44px);align-items:start">
       <figure class="maj-frame" style="margin:0;position:relative;padding:12px;overflow:hidden">
         <div style="position:absolute;inset:0;border:1px solid #d8c79e;z-index:2;pointer-events:none"></div>
         <img src="img/yellow-bracelet-brown.jpg" alt="Yellow diamond bracelet" style="display:block;width:100%;height:min(78vh,720px);object-fit:cover;object-position:center"/>
@@ -243,7 +255,7 @@
         <span>The Doors Open In</span>
         <span style="width:30px;height:1px;background:#7a6a45"></span>
       </div>
-      <div style="display:flex;align-items:center;justify-content:center;gap:clamp(18px,5vw,72px)">
+      <div class="maj-cd" style="display:flex;align-items:center;justify-content:center;gap:clamp(18px,5vw,72px)">
         <div>
           <div style="font-family:'Marcellus',serif;font-size:clamp(44px,7vw,104px);line-height:1;color:#f3ead7">{{ cdDays }}</div>
           <div style="margin-top:14px;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#b89a6a">Days</div>
@@ -298,9 +310,9 @@
   <!-- FOOTER -->
   <footer style="background:#211d18;color:#cdbf9f">
     <div style="max-width:1240px;margin:0 auto;padding:clamp(56px,7vw,88px) 32px clamp(40px,4vw,56px)">
-      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px">
+      <div class="maj-foot" style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px">
         <div>
-          <img src="majesta-logo.png" alt="MAJESTA" style="height:26px;width:auto;display:block"/>
+          <img src="majesta-logo.png" alt="MAJESTA" style="height:30px;width:auto;display:block"/>
           <p style="font-size:13px;line-height:1.7;color:#9a8e72;max-width:280px;margin:18px 0 24px;font-weight:300">Fine jewellery inspired by African heritage. Opening to private clients, Autumn 2026.</p>
           <div style="display:flex;gap:18px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbf9f">
             <a href="#" style="text-decoration:none;color:inherit">Instagram</a>

@@ -17,14 +17,21 @@
   body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   ::selection{background:rgba(184,154,106,.22)}
   a{color:inherit}
+  @media (max-width:720px){
+    .maj-nav{gap:0 !important}
+    .maj-nav a{font-size:9px !important;letter-spacing:.06em !important;padding:6px 7px !important}
+    .maj-g2{grid-template-columns:1fr !important;gap:30px !important}
+    .maj-g2 img{height:64vh !important}
+    h1{font-size:clamp(40px,13vw,62px) !important}
+  }
 </style>
 </helmet>
 
 <div style="font-family:'Hanken Grotesk',sans-serif;background:#faf8f4;color:#1c1a17">
 
   <div style="position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:24px;height:48px;padding:0 24px;background:rgba(250,248,244,.86);backdrop-filter:blur(10px);border-bottom:1px solid #e7e0d3">
-    <a href="index.dc.html" style="text-decoration:none;display:flex;align-items:center"><img src="majesta-logo.png" alt="MAJESTA" style="height:15px;width:auto;display:block"/></a>
-    <div style="display:flex;align-items:center;gap:2px">
+    <a href="index.dc.html" style="text-decoration:none;display:flex;align-items:center"><img src="majesta-logo.png" alt="MAJESTA" style="height:19px;width:auto;display:block"/></a>
+    <div class="maj-nav" style="display:flex;align-items:center;gap:2px">
       <a href="index.dc.html" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#a79f90;padding:7px 12px">Overview</a>
       <a href="Essential.dc.html" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#1c1a17;padding:7px 12px;border-bottom:1px solid #b89a6a">Essential</a>
       <a href="Signature.dc.html" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#a79f90;padding:7px 12px">Signature</a>
@@ -34,7 +41,7 @@
 
   <header style="display:flex;justify-content:center;padding:72px 24px 0">
     <div style="text-align:center">
-      <img src="majesta-logo.png" alt="MAJESTA" style="height:clamp(24px,2.6vw,32px);width:auto;display:block;margin:0 auto"/>
+      <img src="majesta-logo.png" alt="MAJESTA" style="height:clamp(32px,6vw,46px);width:auto;display:block;margin:0 auto"/>
       <div style="margin-top:16px;font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;color:#a79f90">Fine Jewellery</div>
     </div>
   </header>
@@ -59,7 +66,7 @@
     <p style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(24px,3.4vw,34px);line-height:1.42;margin:0;color:#2a2620">We gather the rarest stones of the continent and set them by hand — emeralds, sapphires and diamonds chosen for their fire, composed into pieces made to outlast their moment.</p>
   </div>
 
-  <div style="max-width:1180px;margin:0 auto;padding:0 24px clamp(72px,11vw,140px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px);align-items:center">
+  <div class="maj-g2" style="max-width:1180px;margin:0 auto;padding:0 24px clamp(72px,11vw,140px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px);align-items:center">
     <img src="img/yellow-pear-held.jpg" alt="Yellow diamond ring" style="display:block;width:100%;height:min(66vh,640px);object-fit:cover;object-position:center"/>
     <div>
       <div style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#b89a6a;margin-bottom:22px">The First Pieces</div>
@@ -109,7 +116,7 @@
       <a href="#" style="text-decoration:none;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#6b6459">Pinterest</a>
       <a href="#" style="text-decoration:none;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#6b6459">Journal</a>
     </div>
-    <img src="majesta-logo.png" alt="MAJESTA" style="height:20px;width:auto;display:block;margin:0 auto"/>
+    <img src="majesta-logo.png" alt="MAJESTA" style="height:24px;width:auto;display:block;margin:0 auto"/>
     <div style="margin-top:16px;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#a79f90">Arriving 2026 · © MAJESTA Fine Jewellery</div>
   </footer>
 

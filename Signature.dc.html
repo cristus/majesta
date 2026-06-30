@@ -17,14 +17,26 @@
   body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
   ::selection{background:rgba(95,99,66,.18)}
   a{color:inherit}
+  @media (max-width:760px){
+    .maj-nav{gap:0 !important}
+    .maj-nav a{font-size:9px !important;letter-spacing:.05em !important;padding:6px 6px !important}
+    .maj-hero{grid-template-columns:1fr !important;gap:36px !important}
+    .maj-overlap{left:10px !important;bottom:10px !important;width:44% !important;height:38% !important}
+    .maj-cols{columns:1 !important}
+    .maj-g2{grid-template-columns:1fr !important;gap:30px !important}
+    .maj-g3{grid-template-columns:1fr !important;gap:30px !important}
+    .maj-g3 img{height:60vh !important}
+    .maj-cd > div{padding-left:8px !important;padding-right:8px !important}
+    .maj-foot{grid-template-columns:1fr !important;gap:32px !important}
+  }
 </style>
 </helmet>
 
 <div style="font-family:'Archivo',sans-serif;background:#f1ede4;color:#211f1b">
 
   <div style="position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:24px;height:48px;padding:0 24px;background:rgba(241,237,228,.86);backdrop-filter:blur(10px);border-bottom:1px solid #d6cfc0">
-    <a href="index.dc.html" style="text-decoration:none;display:flex;align-items:center"><img src="majesta-logo.png" alt="MAJESTA" style="height:15px;width:auto;display:block"/></a>
-    <div style="display:flex;align-items:center;gap:2px">
+    <a href="index.dc.html" style="text-decoration:none;display:flex;align-items:center"><img src="majesta-logo.png" alt="MAJESTA" style="height:19px;width:auto;display:block"/></a>
+    <div class="maj-nav" style="display:flex;align-items:center;gap:2px">
       <a href="index.dc.html" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#8f8979;padding:7px 12px">Overview</a>
       <a href="Essential.dc.html" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#8f8979;padding:7px 12px">Essential</a>
       <a href="Signature.dc.html" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#211f1b;padding:7px 12px;border-bottom:1px solid #5f6342">Signature</a>
@@ -39,12 +51,12 @@
       <span style="color:#5f6342">Issue N°01</span>
       <span style="flex:1;height:1px;background:#d6cfc0;max-width:240px"></span>
     </div>
-    <img src="majesta-logo.png" alt="MAJESTA" style="height:clamp(34px,6.2vw,86px);width:auto;display:block;margin:26px auto 0"/>
+    <img src="majesta-logo.png" alt="MAJESTA" style="height:clamp(44px,9vw,112px);width:auto;display:block;margin:26px auto 0"/>
     <div style="margin-top:20px;font-family:'Bodoni Moda',serif;font-style:italic;font-weight:400;font-size:clamp(20px,2.4vw,30px);color:#211f1b">Coming Soon</div>
     <div style="margin-top:8px;font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;color:#5f6342">The Unveiling — Autumn 2026</div>
   </div>
 
-  <div style="max-width:1280px;margin:0 auto;padding:clamp(52px,7vw,104px) 32px;display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(30px,5vw,76px);align-items:center">
+  <div class="maj-hero" style="max-width:1280px;margin:0 auto;padding:clamp(52px,7vw,104px) 32px;display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(30px,5vw,76px);align-items:center">
     <div>
       <div style="font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#9aa07c;margin-bottom:24px">Fig. 01 — The Maison</div>
       <h1 style="font-family:'Bodoni Moda',serif;font-weight:400;font-size:clamp(46px,6.4vw,96px);line-height:1.02;letter-spacing:-.005em;margin:0">The Art of<br><em style="font-style:italic">Adornment</em></h1>
@@ -56,7 +68,7 @@
     </div>
     <figure style="position:relative;margin:0">
       <img src="img/emerald-ring-blue.jpg" alt="Emerald ring" style="display:block;width:100%;height:min(74vh,720px);object-fit:cover;object-position:center"/>
-      <img src="img/emerald-sketch.jpg" alt="Emerald ring illustration" style="position:absolute;left:-26px;bottom:-30px;width:42%;height:46%;object-fit:cover;object-position:center;border:6px solid #f1ede4;box-shadow:0 24px 54px rgba(0,0,0,.22)"/>
+      <img src="img/emerald-sketch.jpg" alt="Emerald ring illustration" class="maj-overlap" style="position:absolute;left:-26px;bottom:-30px;width:42%;height:46%;object-fit:cover;object-position:center;border:6px solid #f1ede4;box-shadow:0 24px 54px rgba(0,0,0,.22)"/>
       <figcaption style="position:absolute;top:-26px;right:0;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#9aa07c">Fig. 02 — Atelier study</figcaption>
     </figure>
   </div>
@@ -65,7 +77,7 @@
 
   <div style="max-width:1080px;margin:0 auto;padding:clamp(56px,8vw,108px) 32px">
     <div style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#9aa07c;text-align:center;margin-bottom:40px">Heritage in Every Setting</div>
-    <div style="columns:2;column-gap:54px;font-size:15px;line-height:1.85;color:#423e37;font-weight:300">
+    <div class="maj-cols" style="columns:2;column-gap:54px;font-size:15px;line-height:1.85;color:#423e37;font-weight:300">
       <p style="margin:0 0 18px"><span style="float:left;font-family:'Bodoni Moda',serif;font-weight:500;font-size:78px;line-height:.66;padding:10px 14px 0 0;color:#5f6342">T</span>he story of MAJESTA begins not in a boutique but in the earth — in the emerald seams and sapphire deposits that have made the continent a quiet capital of colour for centuries. Each stone is chosen for its fire, its clarity, its character.</p>
       <p style="margin:0 0 18px">Our ateliers work in the old manner: by hand, by eye, by feel. A single necklace may pass through a dozen pairs of hands before it is ready. We do not rush what is meant to endure.</p>
       <p style="margin:0">What arrives this autumn is not a catalogue but a point of view — adornment as inheritance, beauty composed to be passed down rather than worn out.</p>
@@ -73,7 +85,7 @@
   </div>
 
   <div style="background:#e9e3d6">
-    <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,7vw,96px) 32px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center">
+    <div class="maj-g2" style="max-width:1280px;margin:0 auto;padding:clamp(48px,7vw,96px) 32px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center">
       <figure style="margin:0">
         <img src="img/peacock.jpg" alt="The peacock emblem" style="display:block;width:100%;height:auto;border:1px solid #d6cfc0"/>
         <figcaption style="margin-top:14px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#9aa07c">The Peacock — the house emblem</figcaption>
@@ -90,7 +102,7 @@
       <h3 style="font-family:'Bodoni Moda',serif;font-weight:400;font-size:clamp(24px,3vw,40px);margin:0">The Stones</h3>
       <span style="font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#9aa07c">Three Houses of Colour</span>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,48px)">
+    <div class="maj-g3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,48px)">
       <div>
         <img src="img/green-bracelet.jpg" alt="Emerald bracelet" style="display:block;width:100%;height:min(48vh,460px);object-fit:cover;object-position:center"/>
         <div style="font-family:'Bodoni Moda',serif;font-style:italic;font-size:13px;color:#9aa07c;margin-top:18px">N°01</div>
@@ -115,7 +127,7 @@
   <div style="background:#e9e3d6">
     <div style="max-width:1280px;margin:0 auto;padding:clamp(48px,6vw,84px) 32px;text-align:center">
       <div style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#9aa07c;margin-bottom:34px">The Unveiling Begins In</div>
-      <div style="display:flex;align-items:stretch;justify-content:center">
+      <div class="maj-cd" style="display:flex;align-items:stretch;justify-content:center">
         <div style="padding:0 clamp(16px,4vw,52px)">
           <div style="font-family:'Bodoni Moda',serif;font-weight:400;font-size:clamp(42px,7vw,96px);line-height:1">{{ cdDays }}</div>
           <div style="margin-top:12px;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#7c766a">Days</div>
@@ -157,9 +169,9 @@
   </div>
 
   <footer style="background:#232117;color:#d9d3c4">
-    <div style="max-width:1280px;margin:0 auto;padding:64px 32px 56px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px">
+    <div class="maj-foot" style="max-width:1280px;margin:0 auto;padding:64px 32px 56px;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px">
       <div>
-        <img src="majesta-logo.png" alt="MAJESTA" style="height:26px;width:auto;display:block"/>
+        <img src="majesta-logo.png" alt="MAJESTA" style="height:30px;width:auto;display:block"/>
         <p style="font-size:13px;line-height:1.7;color:#9c9686;max-width:300px;margin:18px 0 0;font-weight:300">Fine jewellery inspired by African heritage. Arriving Autumn 2026.</p>
       </div>
       <div>
