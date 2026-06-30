@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Hanken+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#f4f1ea}
+  body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  a{color:inherit;text-decoration:none}
+  .maj-card img{transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+  .maj-card:hover img{transform:scale(1.04)}
+  .maj-card:hover .maj-go{color:#1c1a17;border-color:#1c1a17}
+</style>
+</helmet>
+
+<div style="font-family:'Hanken Grotesk',sans-serif;background:#f4f1ea;color:#1c1a17;min-height:100vh;display:flex;flex-direction:column">
+
+  <header style="text-align:center;padding:clamp(54px,8vw,104px) 24px clamp(30px,4vw,52px)">
+    <img src="majesta-logo.png" alt="MAJESTA" style="height:clamp(26px,3vw,38px);width:auto;display:block;margin:0 auto"/>
+    <div style="margin-top:20px;font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:#a79f90">Coming Soon — Concept Directions</div>
+    <p style="max-width:560px;margin:30px auto 0;font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(22px,3vw,32px);line-height:1.4;color:#2a2620">Three creative directions for the MAJESTA launch, each with its own identity. Choose a direction to view the full page.</p>
+  </header>
+
+  <div style="max-width:1320px;width:100%;margin:0 auto;padding:clamp(20px,3vw,40px) 24px clamp(56px,7vw,96px);display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,2.4vw,40px)">
+
+    <a href="Essential.dc.html" class="maj-card" style="display:block">
+      <div style="overflow:hidden;background:#e7e0d3">
+        <img src="img/sapphire-hand.jpg" alt="Essential" style="display:block;width:100%;height:min(58vh,560px);object-fit:cover;object-position:50% 36%"/>
+      </div>
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-top:22px">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:11px;letter-spacing:.1em;color:#a79f90">01</div>
+        <div class="maj-go" style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#a79f90;border-bottom:1px solid #cfc7b6;padding-bottom:3px;transition:color .3s,border-color .3s">View →</div>
+      </div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(28px,3vw,40px);margin:8px 0 0">Essential</h2>
+      <p style="font-size:12.5px;letter-spacing:.04em;color:#6b6459;margin:8px 0 0;font-weight:300">Elegant simplicity — quiet luxury through restraint.</p>
+    </a>
+
+    <a href="Signature.dc.html" class="maj-card" style="display:block">
+      <div style="overflow:hidden;background:#e7e0d3">
+        <img src="img/emerald-ring-blue.jpg" alt="Signature" style="display:block;width:100%;height:min(58vh,560px);object-fit:cover;object-position:center"/>
+      </div>
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-top:22px">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:11px;letter-spacing:.1em;color:#a79f90">02</div>
+        <div class="maj-go" style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#a79f90;border-bottom:1px solid #cfc7b6;padding-bottom:3px;transition:color .3s,border-color .3s">View →</div>
+      </div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(28px,3vw,40px);margin:8px 0 0">Signature</h2>
+      <p style="font-size:12.5px;letter-spacing:.04em;color:#6b6459;margin:8px 0 0;font-weight:300">Editorial storytelling — a luxury publication in motion.</p>
+    </a>
+
+    <a href="Maison.dc.html" class="maj-card" style="display:block">
+      <div style="overflow:hidden;background:#e7e0d3">
+        <img src="img/yellow-macro.jpg" alt="Maison" style="display:block;width:100%;height:min(58vh,560px);object-fit:cover;object-position:center"/>
+      </div>
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-top:22px">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:11px;letter-spacing:.1em;color:#a79f90">03</div>
+        <div class="maj-go" style="font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#a79f90;border-bottom:1px solid #cfc7b6;padding-bottom:3px;transition:color .3s,border-color .3s">View →</div>
+      </div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(28px,3vw,40px);margin:8px 0 0">Maison</h2>
+      <p style="font-size:12.5px;letter-spacing:.04em;color:#6b6459;margin:8px 0 0;font-weight:300">Luxury maison — a cinematic, flagship experience.</p>
+    </a>
+
+  </div>
+
+  <footer style="margin-top:auto;border-top:1px solid #e3dcce;padding:30px 24px;text-align:center;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#a79f90">
+    MAJESTA Fine Jewellery · Arriving 2026
+  </footer>
+
+</div>
+
+</x-dc>
+</body>
+</html>

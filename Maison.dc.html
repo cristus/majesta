@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:#f7f3ea}
+  body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  ::selection{background:rgba(194,168,117,.28)}
+  a{color:inherit}
+  @keyframes maj-shimmer{0%{background-position:-160% 0}100%{background-position:260% 0}}
+  @keyframes maj-pulse{0%,100%{opacity:.25;transform:scaleY(.7)}50%{opacity:1;transform:scaleY(1)}}
+  .maj-frame img{transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+  .maj-frame:hover img{transform:scale(1.045)}
+  .maj-stone{transition:transform .6s cubic-bezier(.2,.7,.2,1),box-shadow .6s}
+  .maj-stone:hover{transform:translateY(-6px);box-shadow:0 30px 60px rgba(43,39,34,.16)}
+</style>
+</helmet>
+
+<div style="font-family:'Jost',sans-serif;background:#f7f3ea;color:#2b2722">
+
+  <div style="background:#2b2722;color:#e6cf9b;text-align:center;padding:9px 16px;font-size:10px;letter-spacing:.28em;text-transform:uppercase">Private previews by appointment &nbsp;·&nbsp; The Maison opens Autumn 2026</div>
+
+  <div style="position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:24px;height:50px;padding:0 24px;background:rgba(247,243,234,.88);backdrop-filter:blur(10px);border-bottom:1px solid #e3dac6">
+    <a href="index.dc.html" style="text-decoration:none;display:flex;align-items:center"><img src="majesta-logo.png" alt="MAJESTA" style="height:15px;width:auto;display:block"/></a>
+    <div style="display:flex;align-items:center;gap:2px">
+      <a href="index.dc.html" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#9c8b66;padding:7px 12px">Overview</a>
+      <a href="Essential.dc.html" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#9c8b66;padding:7px 12px">Essential</a>
+      <a href="Signature.dc.html" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#9c8b66;padding:7px 12px">Signature</a>
+      <a href="Maison.dc.html" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b2722;padding:7px 12px;border-bottom:1px solid #c2a875">Maison</a>
+      <a href="#appointment" style="text-decoration:none;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#2b2722;padding:8px 16px;margin-left:8px;border:1px solid #c2a875">Private Preview</a>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;align-items:center;padding:54px 24px 38px">
+    <div style="display:flex;align-items:center;gap:14px;color:#b89a6a;font-size:10px;letter-spacing:.3em;text-transform:uppercase">
+      <span style="width:40px;height:1px;background:#c2a875"></span>
+      <span>Maison · Fine Jewellery</span>
+      <span style="width:40px;height:1px;background:#c2a875"></span>
+    </div>
+    <div style="display:flex;align-items:center;gap:18px;margin-top:18px">
+      <span style="color:#c2a875;font-size:13px">&#9670;</span>
+      <img src="majesta-logo.png" alt="MAJESTA" style="height:clamp(26px,4.4vw,52px);width:auto;display:block"/>
+      <span style="color:#c2a875;font-size:13px">&#9670;</span>
+    </div>
+  </div>
+
+  <section style="position:relative">
+    <img src="img/yellow-macro.jpg" alt="Yellow diamond ring" style="display:block;width:100%;height:min(88vh,880px);object-fit:cover;object-position:center"/>
+    <div style="position:absolute;inset:20px;border:1px solid rgba(247,243,234,.5);pointer-events:none"></div>
+    <div style="position:absolute;left:0;right:0;bottom:0;padding:clamp(40px,8vw,116px) 24px clamp(34px,5vw,64px);background:linear-gradient(transparent,rgba(20,15,8,.7));text-align:center;pointer-events:none">
+      <div style="display:inline-block;padding:9px 22px;border:1px solid rgba(231,207,155,.6);background:rgba(20,15,8,.28);font-size:clamp(13px,1.4vw,16px);letter-spacing:.4em;text-transform:uppercase;color:#f7eccf;text-shadow:0 2px 16px rgba(0,0,0,.55);font-weight:500">Coming Soon · 2026</div>
+      <h1 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(48px,8vw,128px);line-height:1.02;letter-spacing:.01em;color:#f7f1e4;margin:18px 0 0">A Maison Unveiled</h1>
+      <div style="display:flex;align-items:center;gap:14px;justify-content:center;margin-top:22px;color:#e6cf9b">
+        <span style="width:34px;height:1px;background:#c2a875"></span>
+        <span style="font-size:12px;letter-spacing:.22em;text-transform:uppercase">Where heritage meets fire</span>
+        <span style="width:34px;height:1px;background:#c2a875"></span>
+      </div>
+      <div style="width:1px;height:42px;background:#e6cf9b;margin:30px auto 0;transform-origin:bottom;animation:maj-pulse 2.4s ease-in-out infinite"></div>
+    </div>
+  </section>
+
+  <!-- HALLMARKS -->
+  <div style="max-width:1240px;margin:0 auto;padding:clamp(56px,8vw,104px) 32px">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,52px)">
+      <div style="text-align:center">
+        <div style="color:#c2a875;font-size:14px">&#9670;</div>
+        <div style="font-family:'Marcellus',serif;font-size:clamp(16px,1.4vw,20px);margin-top:16px">Atelier Hand-Setting</div>
+        <p style="font-size:12.5px;line-height:1.7;color:#7a7165;margin:10px 0 0;font-weight:300">Every stone placed by a master's hand.</p>
+      </div>
+      <div style="text-align:center;border-left:1px solid #e3dac6">
+        <div style="color:#c2a875;font-size:14px">&#9670;</div>
+        <div style="font-family:'Marcellus',serif;font-size:clamp(16px,1.4vw,20px);margin-top:16px">Rare Provenance</div>
+        <p style="font-size:12.5px;line-height:1.7;color:#7a7165;margin:10px 0 0;font-weight:300">Gemstones sourced with conscience.</p>
+      </div>
+      <div style="text-align:center;border-left:1px solid #e3dac6">
+        <div style="color:#c2a875;font-size:14px">&#9670;</div>
+        <div style="font-family:'Marcellus',serif;font-size:clamp(16px,1.4vw,20px);margin-top:16px">One of One</div>
+        <p style="font-size:12.5px;line-height:1.7;color:#7a7165;margin:10px 0 0;font-weight:300">No creation is ever repeated.</p>
+      </div>
+      <div style="text-align:center;border-left:1px solid #e3dac6">
+        <div style="color:#c2a875;font-size:14px">&#9670;</div>
+        <div style="font-family:'Marcellus',serif;font-size:clamp(16px,1.4vw,20px);margin-top:16px">Maison Care</div>
+        <p style="font-size:12.5px;line-height:1.7;color:#7a7165;margin:10px 0 0;font-weight:300">A lifetime of service and restoration.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="height:46px;background-image:repeating-linear-gradient(45deg,#c8ac7d 0 1px,transparent 1px 15px),repeating-linear-gradient(-45deg,#c8ac7d 0 1px,transparent 1px 15px);opacity:.5"></div>
+
+  <!-- STORY -->
+  <div style="max-width:1240px;margin:0 auto;padding:clamp(64px,9vw,128px) 32px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,84px);align-items:center">
+    <figure class="maj-frame" style="margin:0;position:relative;padding:14px;overflow:hidden">
+      <div style="position:absolute;inset:0;border:1px solid #c2a875;z-index:2;pointer-events:none"></div>
+      <img src="img/yellow-neck.jpg" alt="Yellow diamond ring worn" style="display:block;width:100%;height:min(72vh,680px);object-fit:cover;object-position:center"/>
+    </figure>
+    <div>
+      <div style="display:flex;align-items:center;gap:12px;color:#b89a6a;margin-bottom:24px">
+        <span style="font-size:11px">&#9670;</span>
+        <span style="font-size:11px;letter-spacing:.26em;text-transform:uppercase">The Maison</span>
+      </div>
+      <h3 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(34px,4.6vw,62px);line-height:1.1;margin:0;letter-spacing:.01em">A house built<br>by hand</h3>
+      <p style="font-size:15px;line-height:1.85;color:#5a5247;margin:28px 0 0;max-width:440px">MAJESTA draws on the heritage of an entire continent — its gemstones, its geometry, its sense of ceremony. Every piece is set by master hands and finished in gold, conceived less as an object than as an heirloom in waiting.</p>
+      <div style="display:flex;align-items:center;gap:16px;margin-top:36px">
+        <span style="width:54px;height:1px;background:#c2a875"></span>
+        <span style="color:#c2a875;font-size:11px">&#9670;</span>
+        <span style="width:54px;height:1px;background:#c2a875"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SAVOIR-FAIRE -->
+  <div style="background:#efe7d6;background-image:linear-gradient(180deg,rgba(255,255,255,.4),rgba(255,255,255,0))">
+    <div style="max-width:1240px;margin:0 auto;padding:clamp(64px,9vw,128px) 32px;display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(40px,5vw,88px);align-items:center">
+      <div>
+        <div style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#b89a6a;margin-bottom:18px">Savoir-Faire</div>
+        <h3 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(30px,4vw,54px);line-height:1.1;margin:0 0 40px">Four hands, one creation</h3>
+        <div style="display:flex;flex-direction:column;gap:0">
+          <div style="display:flex;gap:24px;padding:22px 0;border-top:1px solid #ddd0b8">
+            <div style="font-family:'Marcellus',serif;font-size:24px;color:#b08d4f;min-width:42px">01</div>
+            <div><div style="font-family:'Marcellus',serif;font-size:20px">Selection</div><p style="font-size:13.5px;line-height:1.7;color:#6f665a;margin:6px 0 0;font-weight:300">Stones chosen one by one for fire and clarity.</p></div>
+          </div>
+          <div style="display:flex;gap:24px;padding:22px 0;border-top:1px solid #ddd0b8">
+            <div style="font-family:'Marcellus',serif;font-size:24px;color:#b08d4f;min-width:42px">02</div>
+            <div><div style="font-family:'Marcellus',serif;font-size:20px">Design</div><p style="font-size:13.5px;line-height:1.7;color:#6f665a;margin:6px 0 0;font-weight:300">Each setting drawn by hand before it is made.</p></div>
+          </div>
+          <div style="display:flex;gap:24px;padding:22px 0;border-top:1px solid #ddd0b8">
+            <div style="font-family:'Marcellus',serif;font-size:24px;color:#b08d4f;min-width:42px">03</div>
+            <div><div style="font-family:'Marcellus',serif;font-size:20px">Setting</div><p style="font-size:13.5px;line-height:1.7;color:#6f665a;margin:6px 0 0;font-weight:300">Master jewellers place every stone in gold.</p></div>
+          </div>
+          <div style="display:flex;gap:24px;padding:22px 0;border-top:1px solid #ddd0b8;border-bottom:1px solid #ddd0b8">
+            <div style="font-family:'Marcellus',serif;font-size:24px;color:#b08d4f;min-width:42px">04</div>
+            <div><div style="font-family:'Marcellus',serif;font-size:20px">Finishing</div><p style="font-size:13.5px;line-height:1.7;color:#6f665a;margin:6px 0 0;font-weight:300">Hand-polished, inspected, and signed.</p></div>
+          </div>
+        </div>
+      </div>
+      <figure class="maj-frame" style="margin:0;position:relative;padding:14px;overflow:hidden">
+        <div style="position:absolute;inset:0;border:1px solid #c2a875;z-index:2;pointer-events:none"></div>
+        <img src="img/diamond-necklace.jpg" alt="Diamond necklace detail" style="display:block;width:100%;height:min(78vh,720px);object-fit:cover;object-position:center"/>
+      </figure>
+    </div>
+  </div>
+
+  <!-- BESPOKE DIVIDER (shimmer) -->
+  <div style="max-width:1240px;margin:0 auto;padding:clamp(48px,6vw,84px) 32px;display:flex;align-items:center;gap:22px">
+    <div style="flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(255,243,210,.95) 50%,transparent),#c2a875;background-size:200% 100%;animation:maj-shimmer 5.5s linear infinite"></div>
+    <span style="color:#c2a875;font-size:13px">&#9670;</span>
+    <div style="flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(255,243,210,.95) 50%,transparent),#c2a875;background-size:200% 100%;animation:maj-shimmer 5.5s linear infinite"></div>
+  </div>
+
+  <!-- GEMSTONE TRILOGY -->
+  <div style="max-width:1240px;margin:0 auto;padding:0 32px clamp(64px,9vw,128px)">
+    <div style="text-align:center;margin-bottom:52px">
+      <div style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#b89a6a">The Stones</div>
+      <h3 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(30px,4vw,54px);margin:12px 0 0">A Trilogy of Colour</h3>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(22px,2.6vw,40px)">
+      <div class="maj-stone" style="background:#fff;border:1px solid #ece3d0">
+        <div style="height:4px;background:#1f5c4a"></div>
+        <img src="img/green-bracelet.jpg" alt="Emerald" style="display:block;width:100%;height:min(52vh,500px);object-fit:cover;object-position:center"/>
+        <div style="padding:26px 26px 30px;text-align:center">
+          <div style="font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#1f5c4a">Emerald</div>
+          <div style="font-family:'Marcellus',serif;font-size:26px;margin:10px 0 0">The Green Fire</div>
+          <p style="font-size:13px;line-height:1.7;color:#6f665a;margin:10px 0 0;font-weight:300">The colour of the continent, cut to hold the light.</p>
+        </div>
+      </div>
+      <div class="maj-stone" style="background:#fff;border:1px solid #ece3d0">
+        <div style="height:4px;background:#28406b"></div>
+        <img src="img/emerald-ring-blue.jpg" alt="Sapphire" style="display:block;width:100%;height:min(52vh,500px);object-fit:cover;object-position:center"/>
+        <div style="padding:26px 26px 30px;text-align:center">
+          <div style="font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#28406b">Sapphire</div>
+          <div style="font-family:'Marcellus',serif;font-size:26px;margin:10px 0 0">The Midnight Halo</div>
+          <p style="font-size:13px;line-height:1.7;color:#6f665a;margin:10px 0 0;font-weight:300">Depths of blue, ringed in diamond light.</p>
+        </div>
+      </div>
+      <div class="maj-stone" style="background:#fff;border:1px solid #ece3d0">
+        <div style="height:4px;background:#b08d4f"></div>
+        <img src="img/yellow-pear-held.jpg" alt="Yellow diamond" style="display:block;width:100%;height:min(52vh,500px);object-fit:cover;object-position:center"/>
+        <div style="padding:26px 26px 30px;text-align:center">
+          <div style="font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#b08d4f">Yellow Diamond</div>
+          <div style="font-family:'Marcellus',serif;font-size:26px;margin:10px 0 0">Captured Sunlight</div>
+          <p style="font-size:13px;line-height:1.7;color:#6f665a;margin:10px 0 0;font-weight:300">The warmth of the sun, held in a single stone.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERITAGE BAND -->
+  <div style="position:relative;background:#2b2722;color:#efe6d4;overflow:hidden">
+    <div style="position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,rgba(194,168,117,.10) 0 1px,transparent 1px 22px),repeating-linear-gradient(-45deg,rgba(194,168,117,.10) 0 1px,transparent 1px 22px)"></div>
+    <div style="position:relative;max-width:920px;margin:0 auto;padding:clamp(72px,10vw,140px) 32px;text-align:center">
+      <span style="color:#c2a875;font-size:15px">&#9670;</span>
+      <p style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(26px,3.6vw,46px);line-height:1.42;margin:24px 0 0;color:#f3ead7">Drawn from the heritage of a continent — its colour, its geometry, its ceremony. Each creation is a passage of that inheritance, rendered in gold and stone.</p>
+      <div style="display:flex;align-items:center;gap:16px;justify-content:center;margin-top:36px;color:#b89a6a">
+        <span style="width:40px;height:1px;background:#7a6a45"></span>
+        <span style="font-size:11px;letter-spacing:.24em;text-transform:uppercase">The House of MAJESTA</span>
+        <span style="width:40px;height:1px;background:#7a6a45"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOOKBOOK GALLERY -->
+  <div style="max-width:1240px;margin:0 auto;padding:clamp(64px,9vw,128px) 32px">
+    <div style="text-align:center;margin-bottom:52px">
+      <div style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#b89a6a">The Lookbook</div>
+      <h3 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(30px,4vw,54px);margin:12px 0 0">First Impressions</h3>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,2.6vw,44px);align-items:start">
+      <figure class="maj-frame" style="margin:0;position:relative;padding:12px;overflow:hidden">
+        <div style="position:absolute;inset:0;border:1px solid #d8c79e;z-index:2;pointer-events:none"></div>
+        <img src="img/yellow-bracelet-brown.jpg" alt="Yellow diamond bracelet" style="display:block;width:100%;height:min(78vh,720px);object-fit:cover;object-position:center"/>
+        <figcaption style="text-align:center;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:#9c8b66;margin-top:18px">The Bracelet · Canary &amp; White</figcaption>
+      </figure>
+      <div style="display:flex;flex-direction:column;gap:clamp(20px,2.6vw,44px)">
+        <figure class="maj-frame" style="margin:0;position:relative;padding:12px;overflow:hidden">
+          <div style="position:absolute;inset:0;border:1px solid #d8c79e;z-index:2;pointer-events:none"></div>
+          <img src="img/yellow-clutch.jpg" alt="Pear solitaire" style="display:block;width:100%;height:min(48vh,440px);object-fit:cover;object-position:center"/>
+          <figcaption style="text-align:center;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:#9c8b66;margin-top:18px">The Pear Solitaire</figcaption>
+        </figure>
+        <figure class="maj-frame" style="margin:0;position:relative;padding:12px;overflow:hidden">
+          <div style="position:absolute;inset:0;border:1px solid #d8c79e;z-index:2;pointer-events:none"></div>
+          <img src="img/yellow-chest.jpg" alt="Worn yellow diamonds" style="display:block;width:100%;height:min(48vh,440px);object-fit:cover;object-position:center"/>
+          <figcaption style="text-align:center;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:#9c8b66;margin-top:18px">The Suite · Worn</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- COUNTDOWN -->
+  <div style="background:#2b2722;color:#efe6d4">
+    <div style="max-width:1240px;margin:0 auto;padding:clamp(60px,8vw,108px) 32px;text-align:center">
+      <div style="display:flex;align-items:center;gap:16px;justify-content:center;color:#c2a875;font-size:11px;letter-spacing:.3em;text-transform:uppercase;margin-bottom:46px">
+        <span style="width:30px;height:1px;background:#7a6a45"></span>
+        <span>The Doors Open In</span>
+        <span style="width:30px;height:1px;background:#7a6a45"></span>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center;gap:clamp(18px,5vw,72px)">
+        <div>
+          <div style="font-family:'Marcellus',serif;font-size:clamp(44px,7vw,104px);line-height:1;color:#f3ead7">{{ cdDays }}</div>
+          <div style="margin-top:14px;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#b89a6a">Days</div>
+        </div>
+        <span style="color:#6f6044;font-size:20px;align-self:flex-start;margin-top:10px">&#9670;</span>
+        <div>
+          <div style="font-family:'Marcellus',serif;font-size:clamp(44px,7vw,104px);line-height:1;color:#f3ead7">{{ cdHours }}</div>
+          <div style="margin-top:14px;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#b89a6a">Hours</div>
+        </div>
+        <span style="color:#6f6044;font-size:20px;align-self:flex-start;margin-top:10px">&#9670;</span>
+        <div>
+          <div style="font-family:'Marcellus',serif;font-size:clamp(44px,7vw,104px);line-height:1;color:#f3ead7">{{ cdMins }}</div>
+          <div style="margin-top:14px;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#b89a6a">Minutes</div>
+        </div>
+        <span style="color:#6f6044;font-size:20px;align-self:flex-start;margin-top:10px">&#9670;</span>
+        <div>
+          <div style="font-family:'Marcellus',serif;font-size:clamp(44px,7vw,104px);line-height:1;color:#f3ead7">{{ cdSecs }}</div>
+          <div style="margin-top:14px;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#b89a6a">Seconds</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRIVATE APPOINTMENT -->
+  <div id="appointment" style="max-width:680px;margin:0 auto;padding:clamp(64px,9vw,128px) 32px">
+    <div style="position:relative;border:1px solid #d8c79e;background:#fff;padding:clamp(36px,5vw,64px)">
+      <div style="position:absolute;inset:9px;border:1px solid #ece0c6;pointer-events:none"></div>
+      <div style="position:relative;text-align:center">
+        <span style="color:#c2a875;font-size:14px">&#9670;</span>
+        <div style="font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:#b89a6a;margin-top:14px">By Appointment</div>
+        <h3 style="font-family:'Marcellus',serif;font-weight:400;font-size:clamp(30px,4vw,50px);margin:12px 0 8px">Arrange a Private Preview</h3>
+        <p style="font-size:14px;line-height:1.7;color:#6a6052;margin:0 auto 30px;max-width:420px">Our concierge will receive you ahead of the public unveiling — to view the first pieces in private.</p>
+      </div>
+      <sc-if value="{{ notAppt }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ onAppt }}" style="position:relative;display:flex;flex-direction:column;gap:14px;max-width:460px;margin:0 auto">
+          <input type="text" required placeholder="Full name" style="border:0;border-bottom:1px solid #d8c79e;background:transparent;outline:none;padding:12px 2px;font-family:'Jost',sans-serif;font-size:14px;color:#2b2722"/>
+          <input type="email" required placeholder="Email address" style="border:0;border-bottom:1px solid #d8c79e;background:transparent;outline:none;padding:12px 2px;font-family:'Jost',sans-serif;font-size:14px;color:#2b2722"/>
+          <select style="border:0;border-bottom:1px solid #d8c79e;background:transparent;outline:none;padding:12px 2px;font-family:'Jost',sans-serif;font-size:14px;color:#2b2722">
+            <option>Preferred salon — Cape Town</option>
+            <option>Preferred salon — London</option>
+            <option>Preferred salon — Private virtual viewing</option>
+          </select>
+          <button type="submit" style="margin-top:16px;border:0;cursor:pointer;background:#2b2722;color:#f3ead7;padding:16px;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.18em;text-transform:uppercase">Request Appointment &nbsp;&#9670;</button>
+        </form>
+      </sc-if>
+      <sc-if value="{{ appt }}">
+        <div style="position:relative;text-align:center;font-family:'Marcellus',serif;font-size:23px;color:#9c7f43;padding:14px 0">Received — our concierge will be in touch.</div>
+      </sc-if>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer style="background:#211d18;color:#cdbf9f">
+    <div style="max-width:1240px;margin:0 auto;padding:clamp(56px,7vw,88px) 32px clamp(40px,4vw,56px)">
+      <div style="display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px">
+        <div>
+          <img src="majesta-logo.png" alt="MAJESTA" style="height:26px;width:auto;display:block"/>
+          <p style="font-size:13px;line-height:1.7;color:#9a8e72;max-width:280px;margin:18px 0 24px;font-weight:300">Fine jewellery inspired by African heritage. Opening to private clients, Autumn 2026.</p>
+          <div style="display:flex;gap:18px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#cdbf9f">
+            <a href="#" style="text-decoration:none;color:inherit">Instagram</a>
+            <a href="#" style="text-decoration:none;color:inherit">Pinterest</a>
+            <a href="#" style="text-decoration:none;color:inherit">Journal</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#7d7058;margin-bottom:18px">Maison</div>
+          <div style="display:flex;flex-direction:column;gap:12px;font-size:13px;color:#cdbf9f;font-weight:300">
+            <a href="#" style="text-decoration:none;color:inherit">The Story</a>
+            <a href="#" style="text-decoration:none;color:inherit">Savoir-Faire</a>
+            <a href="#" style="text-decoration:none;color:inherit">Sustainability</a>
+            <a href="#" style="text-decoration:none;color:inherit">The Journal</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#7d7058;margin-bottom:18px">Client Services</div>
+          <div style="display:flex;flex-direction:column;gap:12px;font-size:13px;color:#cdbf9f;font-weight:300">
+            <a href="#appointment" style="text-decoration:none;color:inherit">Private Appointments</a>
+            <a href="#" style="text-decoration:none;color:inherit">Concierge</a>
+            <a href="#" style="text-decoration:none;color:inherit">Bespoke Commissions</a>
+            <a href="#" style="text-decoration:none;color:inherit">Care &amp; Repair</a>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#7d7058;margin-bottom:18px">Visit</div>
+          <div style="display:flex;flex-direction:column;gap:12px;font-size:13px;color:#cdbf9f;font-weight:300">
+            <span>Cape Town Atelier</span>
+            <span>London Salon</span>
+            <span style="color:#8a7c5e;font-size:11.5px;letter-spacing:.08em">By appointment only</span>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-top:clamp(40px,5vw,64px);padding-top:26px;border-top:1px solid rgba(194,168,117,.18)">
+        <div style="font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#7d7058">© 2026 MAJESTA Maison — All Rights Reserved</div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#9a8e72">Join the list</span>
+          <sc-if value="{{ notSub }}" hint-placeholder-val="{{ true }}">
+            <form onSubmit="{{ onSubmit }}" style="display:flex;align-items:center;border-bottom:1px solid #5f553f">
+              <input type="email" required placeholder="Email" style="border:0;background:transparent;outline:none;padding:8px 2px;font-family:'Jost',sans-serif;font-size:12.5px;color:#e9dcbd;width:160px"/>
+              <button type="submit" style="border:0;background:transparent;cursor:pointer;padding:8px 4px;color:#c2a875;font-size:11px;letter-spacing:.14em;text-transform:uppercase">Join</button>
+            </form>
+          </sc-if>
+          <sc-if value="{{ sub }}">
+            <span style="font-family:'Marcellus',serif;font-size:14px;color:#c2a875">Thank you &#9670;</span>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { now: Date.now(), sub: false, appt: false };
+  componentDidMount() {
+    this._t = setInterval(() => this.setState({ now: Date.now() }), 1000);
+  }
+  componentWillUnmount() {
+    if (this._t) clearInterval(this._t);
+  }
+  renderVals() {
+    const target = new Date('2026-09-19T19:00:00').getTime();
+    let d = Math.max(0, target - this.state.now);
+    const day = Math.floor(d / 86400000); d -= day * 86400000;
+    const hr = Math.floor(d / 3600000); d -= hr * 3600000;
+    const mn = Math.floor(d / 60000); d -= mn * 60000;
+    const sc = Math.floor(d / 1000);
+    const p = (n) => String(n).padStart(2, '0');
+    return {
+      cdDays: p(day), cdHours: p(hr), cdMins: p(mn), cdSecs: p(sc),
+      sub: this.state.sub, notSub: !this.state.sub,
+      appt: this.state.appt, notAppt: !this.state.appt,
+      onSubmit: (e) => { e.preventDefault(); this.setState({ sub: true }); },
+      onAppt: (e) => { e.preventDefault(); this.setState({ appt: true }); },
+    };
+  }
+}
+</script>
+</body>
+</html>
